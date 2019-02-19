@@ -46,9 +46,8 @@ class MemberRepository {
         {
             $query->bindValue(1, $value);
             $query->execute();
+            return $query->fetchAll();
         }
-        
-        return $query->fetchAll();
     }
 
     public function update(Members $member) {

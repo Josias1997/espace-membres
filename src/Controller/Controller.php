@@ -39,7 +39,18 @@ else if (isset($_POST['connection']))
     if (isset($_POST['pseudoOrEmail']) && isset($_POST['password']))
     {
         $pseudoOrEmail = htmlspecialchars($_POST['pseudoOrEmail']);
-        $password = htmlspecialchars($_POST['password']);
+        $passwordToVerified = htmlspecialchars($_POST['password']);
+
+        $memberRepository = new MemberRepository();
+        $member = $memberRepository->findBy('pseudo', $pseudoOrEmail);
+
+        $password_hash = $member[0]['pwd'];
+        if (\password_verify($passwordToVerified, $password_hash))
+        {
+            print_r($member);
+            header('Location: ../View/home.php');
+        }
+
     }
 }
 ?>
