@@ -1,0 +1,32 @@
+<div>
+    <form action = '../Controller/Controller.php' method = "post">
+        <fieldset>
+            <legend>Connection</legend>
+            <div>
+                <label>Nickname or Email</label>
+            </div>
+            <div>
+                <input type = "text" name = "pseudoOrEmail" placeholder = "Pseudo Or Email"/>
+            </div>
+            <div>
+                <label>Password</label>
+            </div>
+            <div>
+                <input type = "password" name = "password" placeholder = "Password"/>
+            </div>
+            <div>
+                <label>Stay Logged</label>
+            </div>
+            <div>
+                <input type = "checkbox" name = "stayLogged" value = "yes"/>
+            </div>
+            <input type = "hidden" name = "connection" value = "1"/>
+            <div>
+                <input type = "submit" value = "Connection" />
+            </div>
+            <div>
+                <a href = "inscription.html">Inscription</a>
+            </div>
+        </fieldset>
+    </form>
+</div>
