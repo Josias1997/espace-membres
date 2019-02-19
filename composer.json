@@ -1,0 +1,13 @@
+{
+    "name": "bjykologo/members_space",
+    "authors": [
+        {
+            "name": "King Josias",
+            "email": "kologojosias@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": { "": "src/" }
+    }
+}

@@ -1,5 +1,5 @@
 <?php
-namespace Members_space\Entity;
+namespace Entity;
 
 class Members {
     private $id;
@@ -12,7 +12,7 @@ class Members {
         $this->pseudo = $pseudo;
         $this->password = $password;   
         $this->email = $email;
-        $this->$date_inscription = date('Y-m-d H:i:s');
+        $this->date_inscription = date('Y-m-d H:i:s');
     }
     /**
      * Get the value of id

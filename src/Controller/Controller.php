@@ -1,8 +1,10 @@
 <?php
+namespace Controller;
+require('../../vendor/autoload.php');
 
-namespace Members_space\Controller;
-use Members_space\Entity\Members;
-use Members_space\Repository\MemberRepository;
+use Entity\Members;
+
+use Repository\MemberRepository;
 
 if (isset($_POST['inscription']))
 {
@@ -26,7 +28,7 @@ if (isset($_POST['inscription']))
 
                 $memberRepository->insert($member);
 
-                header('Location: ../view/connection.html');
+                header('Location: ../View/connection.html');
             }
         }
     }

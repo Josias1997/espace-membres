@@ -1,3 +1,3 @@
 <?php
-    header('Location: ./view/connection.html');
+    header('Location: ./src/view/connection.html');
 ?>

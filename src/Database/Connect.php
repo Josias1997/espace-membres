@@ -1,5 +1,5 @@
 <?php
-namespace Members_space\Database;
+namespace Database;
 
 class Connect {
     private $db;
@@ -8,7 +8,7 @@ class Connect {
         $db = null;
         try {
     
-            $db = new PDO("mysql:host=localhost;dbname=members_space;charset=utf8", 'root', '');
+            $db = new \PDO("mysql:host=localhost;dbname=members_space;charset=utf8", 'root', '');
         }
         catch(Exception $e)
         {

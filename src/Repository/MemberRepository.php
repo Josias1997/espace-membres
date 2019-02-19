@@ -1,7 +1,8 @@
 <?php
-namespace Members_space\Repository;
+namespace Repository;
 
-use Members_space\Database\Connect;
+use Database\Connect;
+use Entity\Members;
 
 class MemberRepository {
 
